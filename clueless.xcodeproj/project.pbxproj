@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0CB046362E942D5000CD5421 /* clueless-clone-prd.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CB046322E942D5000CD5421 /* clueless-clone-prd.md */; };
+		0CB046372E942D5000CD5421 /* clueless-technical-docs.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CB046342E942D5000CD5421 /* clueless-technical-docs.md */; };
+		0CB046382E942D5000CD5421 /* clueless-implementation-guide.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CB046332E942D5000CD5421 /* clueless-implementation-guide.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0CC434712E942B7600491421 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CB046322E942D5000CD5421 /* clueless-clone-prd.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "clueless-clone-prd.md"; sourceTree = "<group>"; };
+		0CB046332E942D5000CD5421 /* clueless-implementation-guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "clueless-implementation-guide.md"; sourceTree = "<group>"; };
+		0CB046342E942D5000CD5421 /* clueless-technical-docs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "clueless-technical-docs.md"; sourceTree = "<group>"; };
 		0CC434602E942B7200491421 /* clueless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clueless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC434702E942B7600491421 /* cluelessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cluelessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC4347A2E942B7600491421 /* cluelessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cluelessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,9 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CB046352E942D5000CD5421 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				0CB046322E942D5000CD5421 /* clueless-clone-prd.md */,
+				0CB046332E942D5000CD5421 /* clueless-implementation-guide.md */,
+				0CB046342E942D5000CD5421 /* clueless-technical-docs.md */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
 		0CC434572E942B7200491421 = {
 			isa = PBXGroup;
 			children = (
+				0CB046352E942D5000CD5421 /* docs */,
 				0CC434622E942B7200491421 /* clueless */,
 				0CC434732E942B7600491421 /* cluelessTests */,
 				0CC4347D2E942B7600491421 /* cluelessUITests */,
@@ -212,6 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB046362E942D5000CD5421 /* clueless-clone-prd.md in Resources */,
+				0CB046372E942D5000CD5421 /* clueless-technical-docs.md in Resources */,
+				0CB046382E942D5000CD5421 /* clueless-implementation-guide.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +418,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = clueless/clueless.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -407,7 +431,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = falaki.clueless;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = clueless/clueless.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -435,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = falaki.clueless;
 				PRODUCT_NAME = "$(TARGET_NAME)";
